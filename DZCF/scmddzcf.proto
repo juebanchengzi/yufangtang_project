@@ -1,0 +1,22 @@
+// Copyright 2018 gRPC chengzi
+
+syntax='proto3';
+
+option java_multiple_files = true;
+option java_package = "io.grpc.scmd.Dzcf";
+option java_outer_classname = "DzcfProto";
+option objc_class_prefix = "TCR";
+
+package Dzcf;
+
+service Data{
+	rpc TextDzcf (ImagePath) returns (Jsondata){}
+}
+
+message ImagePath{
+	string path=1;
+}
+
+message Jsondata{
+	string data_json=1;
+}

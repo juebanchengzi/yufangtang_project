@@ -1,0 +1,27 @@
+// Copyright 2018 gRPC chengzi
+
+syntax='proto3';
+
+option java_multiple_files = true;
+option java_package = "io.grpc.scmd.Jiexi";
+option java_outer_classname = "JiexiProto";
+option objc_class_prefix = "TCR";
+
+package yft;
+
+service segmentation{
+    rpc Data (DataRequest) returns (DataReply){}
+}
+
+message DataRequest{
+    int32 mdvalue=1;
+}
+
+message DataReply{
+    string info=1;
+}
+
+
+
+
+
